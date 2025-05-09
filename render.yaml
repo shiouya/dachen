@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: da-chen-guang
+    env: java
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/dachen.jar"
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+    plan: free
