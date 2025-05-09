@@ -2,7 +2,7 @@ services:
   - type: web
     name: da-chen-guang
     env: java
-    buildCommand: "mvn clean package -DskipTests"
+    buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/*.jar"
     envVars:
       - key: SPRING_PROFILES_ACTIVE
