@@ -3,7 +3,7 @@ services:
     name: da-chen-guang
     env: java
     buildCommand: "./mvnw clean package -DskipTests"
-    startCommand: "java -jar target/dachen.jar"
+    startCommand: "java -jar target/*.jar"
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production
